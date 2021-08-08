@@ -10,16 +10,13 @@ if(navToggle){
         navMenu.classList.add('show-menu')
     })
 }
-/* === Menu Hidden === */
+/* === Menu Hiddens === */
 if(navClose){
     navClose.addEventListener('click', () => {
         navMenu.classList.remove('show-menu')
     })
 }
 /* Validate if constant exists */
-
-
-/*==================== REMOVE MENU MOBILE ====================*/
 
 
 /*==================== ACCORDION SKILLS ====================*/
@@ -38,6 +35,15 @@ if(navClose){
 
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+
+/* Validasi dengan if else */
+
+/* === Menghapus menu mobile === */
+const navLink = document.querySelectorAll('.nav__link')
+function linkAction() {
+    navMenu.classList.remove('show-menu')
+}
+navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
 /*==================== CHANGE BACKGROUND HEADER ====================*/ 
