@@ -36,13 +36,13 @@
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#work" class="nav__link">
+                        <a href="#experiences" class="nav__link">
                             <i class="uil uil-bag-alt nav__icon"></i> Experiences
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#pdf" class="nav__link">
-                            <i class="uil uil-file-bookmark-alt nav__icon"></i>Resume
+                        <a href="#services" class="nav__link">
+                            <i class="uil uil-file-bookmark-alt nav__icon"></i>Services
                         </a>
                     </li>
                     <li class="nav__item">
@@ -175,7 +175,7 @@
                             <div class="skills__data">
                                 <div class="skills__titles">
                                     <h3 class="skills__name">CSS</h3>
-                                    <span class="skills__css"><i class="uil uil-css3-simple"></i></span>
+                                    <span class="skills__css"><i class="uil uil-programming-language"></i></span>
                                 </div>
                             </div>
                             <div class="skills__data">
@@ -194,46 +194,49 @@
                     </div>
                 </div>
                 <!--==Skills 2==-->
-                <div class="skills__content skills__close">
-                    <div class="skills__header">
-                        <i class="uil uil-clouds skills__icon"></i>
-                        <div>
-                            <h1 class="skills__titles">Cloud Computing</h1>
-                            <span class="skills__subtitle">1 Year Experiences</span>
-                        </div>
-                        <i class="uil uil-angle-down skills__arrow"></i>
-                    </div>
-
-                    <div class="skills__list grid">
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">Kubernetes</h3>
-                                <span class="iconify skills__kuber" data-icon="mdi:kubernetes"></span>
+                <div>
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-clouds skills__icon"></i>
+                            <div>
+                                <h1 class="skills__titles">Cloud Computing</h1>
+                                <span class="skills__subtitle">1 Year Experiences</span>
                             </div>
+                            <i class="uil uil-angle-down skills__arrow"></i>
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">Docker</h3>
-                                <span class="skills__docker"><i class="uil uil-docker"></i></span>
+    
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Kubernetes</h3>
+                                    <span class="iconify skills__kuber" data-icon="mdi:kubernetes"></span>
+                                </div>
                             </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Docker</h3>
+                                    <span class="skills__docker"><i class="uil uil-docker"></i></span>
+                                </div>
+                            </div>
+    
                         </div>
-
                     </div>
                 </div>
             </div>
         </section>
-
-        <section class="qualification section">
+        
+        <!--QUALIFICATION SECTION-->
+        <section class="qualification section" id="experiences">
             <h2 class="section__title">Qualification</h2>
             <span class="section__subtitle">My Journey</span>
 
-            <div class="qualification__container">
+            <div class="qualification__container container">
                 <div class="qualification__tabs">
-                    <div class="qualification__button button--flex">
+                    <div class="qualification__button button--flex qualification__active" data-target='#education'>
                         <i class="uil uil-graduation-cap qualification__icon"></i>
                         Educations
                     </div>
-                    <div class="qualification__button button--flex">
+                    <div class="qualification__button button--flex" data-target="#work">
                         <i class="uil uil-bag qualification__icon"></i>
                         Work
                     </div>
@@ -241,16 +244,155 @@
 
                 <div class="qualification__sections">
                     <!--CONTENT 1-->
-                    <div class="qualification__content">
+                    <div class="qualification__content qualification__active" data-content id="education">
+                        <!--=====Qualification 1======-->
                         <div class="qualification__data">
                             <div>
-                                <h3 class="qualification__title">Cloud Computing</h3>
-                                <span class="qualification__subtitle">Google Bangkit Accademy</span>
+                                <h3 class="qualification__title">Cloud Computing Student</h3>
+                                <span class="qualification__subtitle">Google Bangkit Indonesia Academy</span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i>
                                     Feb 2021 - Jul 2021
                                 </div>
                             </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!--=====Qualification 2======-->
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <!--<span class="qualification__line"></span>-->
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">Telecommunication Enginner</h3>
+                                <span class="qualification__subtitle">Bandung - Telkom University</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2018 - Now
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--=====CONTENT 2======-->
+                    <div class="qualification__content" data-content id="work">
+                        <!--=====Qualification 2.1======-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Cloud Computing</h3>
+                                <span class="qualification__subtitle">Google Bangkit Indonesia Academy</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    Feb 2021 - Jul 2021
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!--=====Qualification 2.2======-->
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <!--<span class="qualification__line"></span>-->
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">Divisi Access Optima</h3>
+                                <span class="qualification__subtitle">Semarang - Witel Telkom</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    Jul 2020 - Aug 2020
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--========SERVICES SECTION===========-->
+        <section class="services section" id="services">
+            <h2 class="section__title">Services</h2>
+            <span class="section__subtitle">What i can do</span>
+
+            <div class="services__container container grid">
+                <!--========SERVICES 1===========-->
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-web-grid-alt services__icon"></i>
+                        <h3 class="services__title">Front-End <br> Developer</h3>
+                    </div>
+
+                    <span class="button button--flex button-small button--link services__button">
+                        View More 
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Front-End Developer</h4>
+                            <i class="uil uil-times services__modal-close"></i>
+                            <ul class="services__modal-ser grid">
+                                <li class="services__modal--service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Creating website interface</p>
+                                </li>
+                                <li class="services__modal--service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Website page Development</p>
+                                </li>
+                                <li class="services__modal--service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Containerizing website for Development</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!--========SERVICES 2===========-->
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-arrow services__icon"></i>
+                        <h3 class="services__title">Coming <br> Soon</h3>
+                    </div>
+
+                    <span class="button button--flex button-small button--link services__button">
+                        View More 
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Coming <br> Soon</h4>
+                            <i class="uil uil-times services__modal-close"></i>
+                            <ul class="services__modal-ser grid">
+                                <li class="services__modal--service">
+                                    <i class="uil uil-times-circle services__modal-icon"></i>
+                                    <p>Coming Soon</p>
+                                </li>
+                                <li class="services__modal--service">
+                                    <i class="uil uil-times-circle services__modal-icon"></i>
+                                    <p>Coming Soon</p>
+                                </li>
+                                <li class="services__modal--service">
+                                    <i class="uil uil-times-circle services__modal-icon"></i>
+                                    <p>Coming Soon</p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
