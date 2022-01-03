@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +7,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"> <!--Link untuk unicons-->
-    <link rel="stylesheet" href=""> <!--Link untuk swiper css-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css"> <!--Link untuk swiper css-->
     <link rel="stylesheet" href="assets/css/styles.css"> <!--Link untuk css-->
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
     <title>Personal Portofolio</title>
@@ -21,7 +22,7 @@
                 
                 <ul class="nav__list grid">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link">
+                        <a href="#home" class="nav__link active-link">
                             <i class="uil uil-estate nav__icon"></i> Home
                         </a>
                     </li>
@@ -46,6 +47,11 @@
                         </a>
                     </li>
                     <li class="nav__item">
+                        <a href="#portofolio" class="nav__link">
+                            <i class="uil uil-suitcase-alt nav__icon"></i>Portofolio
+                        </a>
+                    </li>
+                    <li class="nav__item">
                         <a href="#contact" class="nav__link">
                             <i class="uil uil-comment-edit nav__icon"></i> Contact Me
                         </a>
@@ -55,11 +61,13 @@
                 <i class="uil uil-times nav__close" id="nav-close"></i>
             </div>
             <div class="nav__btns">
+                <!--Theme change Button-->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="uil uil-apps"></i>
                 </div>
             </nav>
-        </header>
+    </header>
     
     <!--Main-->
     <main class="main">
@@ -115,7 +123,6 @@
                 </div>
             </div>
         </section>
-
 
         <!---ABOUT- SECTION-->
         <section class="about section" id="about">
@@ -218,7 +225,7 @@
                                     <span class="skills__docker"><i class="uil uil-docker"></i></span>
                                 </div>
                             </div>
-    
+
                         </div>
                     </div>
                 </div>
@@ -396,20 +403,213 @@
                         </div>
                     </div>
                 </div>
+                <!--========SERVICES 3===========-->
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-arrow services__icon"></i>
+                        <h3 class="services__title">Coming <br> Soon</h3>
+                    </div>
+
+                    <span class="button button--flex button-small button--link services__button">
+                        View More 
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Coming <br> Soon</h4>
+                            <i class="uil uil-times services__modal-close"></i>
+                            <ul class="services__modal-ser grid">
+                                <li class="services__modal--service">
+                                    <i class="uil uil-times-circle services__modal-icon"></i>
+                                    <p>Coming Soon</p>
+                                </li>
+                                <li class="services__modal--service">
+                                    <i class="uil uil-times-circle services__modal-icon"></i>
+                                    <p>Coming Soon</p>
+                                </li>
+                                <li class="services__modal--service">
+                                    <i class="uil uil-times-circle services__modal-icon"></i>
+                                    <p>Coming Soon</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
+        <!--========PORTOFOLIO SECTION===========-->
+        <section class="portofolio section" id="portofolio">
+            <h2 class="section__title">Portofolio</h2>
+            <span class="section__subtitle">Recent working</span>
 
-        
+            <div class="portofolio__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!--=====PORTOFOLIO 1====--> 
+                    <div class="portofolio__content grid swiper-slide">
+                        <img src="assets/img/Portfolio1.jpg" alt="" class="portofolio__img">
+                        <div class="portofolio__data">
+                            <h3 class="portofolio__title">Creative Website</h3>
+                            <p class="portofolio__description">Create website adaptable to all device 
+                                with UI component and also animated interactions too.</p>
+                            <a href="#" class="button button--flex button--small portofolio__button">
+                                Demo
+                                <i class="uil uil-flask button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--=====PORTOFOLIO 2====--> 
+                    <div class="portofolio__content grid swiper-slide">
+                        <img src="assets/img/Portfolio2.jpg" alt="" class="portofolio__img">
+
+                        <div class="portofolio__data">
+                            <h3 class="portofolio__title">IoT System</h3>
+                            <p class="portofolio__description">To be able to run a machine so that 
+                                machines can talk between machines and can be used to reduce problems in life.</p>
+                            <a href="#" class="button button--flex button--small portofolio__button">
+                                Demo
+                                <i class="uil uil-flask button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--=====PORTOFOLIO 3====--> 
+                    <div class="portofolio__content grid swiper-slide">
+                        <img src="assets/img/Portfolio3.jpg" alt="" class="portofolio__img">
+                        <div class="portofolio__data">
+                            <h3 class="portofolio__title">Online Shop</h3>
+                            <p class="portofolio__description">Creating a website that can be used to transact safely and comfortably.</p>
+                            <a href="#" class="button button--flex button--small portofolio__button">
+                                Demo
+                                <i class="uil uil-flask button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--Arrow-->
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-portofolio-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-portofolio-icon"></i>
+                </div>
+                <!--Pagination-->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!--=====CONTACT ME=====-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in touch</span>
+
+            <div class="contact__container container grid">
+                <div>
+                    <div class="contact__information">
+                        <i class="uil uil-phone contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Call Me</h3>
+                            <span class="contact__subtitle">+62821-3664-0652</span>
+                        </div>
+                    </div>
+                    <div class="contact__information">
+                        <i class="uil uil-at contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Email</h3>
+                            <span class="contact__subtitle">lintanghannan123@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="contact__information">
+                        <i class="uil uil-user-location contact__icon"></i>
+                        
+                        <div>
+                            <h3 class="contact__title">Location</h3>
+                            <span class="contact__subtitle">Griya Bandung Asri 1, Bojong Soang, Bandung, Jawa Barat</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" class="contact__form grid">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Name</label>
+                            <input type="text" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Email</label>
+                            <input type="email" class="contact__input">
+                        </div>
+                    </div>
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Project</label>
+                        <input type="text" class="contact__input">
+                    </div>
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Message</label>
+                        <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                    </div>
+
+                    <div>
+                        <a href="#" class="button button--flex">Send
+                            <i class="uil uil-message button__icon"></i>
+                        </a>
+
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
 
+    <!---Footer page-->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Lintang</h1>
+                    <span class="footer__subtitle">Front-End Developer</span>
+                </div>
+                <ul class="footer__links">
+                    <li>
+                        <a href="#services" class="footer__link">Services</a>
+                    </li>
+                    <li>
+                        <a href="#portofolio" class="footer__link">Portofolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contact Me</a>
+                    </li>
+                </ul>
+                <div class="footer__socials">
+                    <a href="https://line.me/id/" class="footer__social">
+                        <i class="uil uil-line"></i>
+                    </a>
+                    <a href="https://id.linkedin.com/" class="footer__social">
+                        <i class="uil uil-linkedin"></i>
+                    </a>
+                    <a href="" class="footer__social">
+                        <i class="uil uil-instagram-alt"></i>
+                    </a>
+                    <a href="" class="footer__social">
+                        <i class="uil uil-telegram"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="footer__copy">&#169; Lintang. All right reserved.</p>
+        </div>
+    </footer>
 
+    <!--Scroll Top-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-angle-double-up scrollup__icon"></i>
+    </a>
 
-
-
-    <script src=""></script> <!--Link Swiper JS-->
+    <script src="assets/js/swiper-bundle.min.js"></script> <!--Link Swiper JS-->
     <script src="assets/js/main.js"></script> <!--Link untuk JS-->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 </body>
+
 </html>
